@@ -1,0 +1,43 @@
+// first a person will signup or register by sending a object inside DB model users
+// each object represent a user. if that object have a role of admin. then he can get all data or object inside users model or collection. plus he can edit or delete any object or all object
+// if the object or user have a role: user they can only get or see their object data only, they cannot see or get or edit or delete any other objects or user
+
+// JWT will give you two tokens
+// 1.refresh token
+// 2. access token
+
+// imagine they are coming to disney land
+// user with role admin, user with role user
+// we will verify their credentails through username or password or email
+// both of them will be provided with a refresh token
+// this refresh token will have a expiry date or expiry time
+// if the refresh token is expired they have to go outside or they will  be logged out
+// if he wants to comeback or login they have to enter their or verify their credentials again
+
+// both user and admin gets a access token, but when both of them try to do something like edit or delete or get all data or get their own data or object.
+
+// admin comes he is trying to get all object from user collection or model we will verify the access token and then if it is valid we will allow him to do edit, delete or get all data
+
+// if user comes with access token that is valid then he can get only his data
+
+
+
+
+
+
+// register logic
+// if role = admin
+// ask for code?
+// if role and code correct=> useRole will be admin
+// if role =admin
+// code = wrong, then just stop them from registering saying that wrong code
+// if role = "cake" or "user" or "anything"
+// assign userRole = user
+
+// during login=> DB or bodyguard gets the refresh token for each user or object
+// then we will give a access token for each object
+// admin will have a different access token and user objects will have different access token
+
+
+// a person can only login and see their data if they have object role user
+// a person is registered as admin he can see all objects and edit or delete them
